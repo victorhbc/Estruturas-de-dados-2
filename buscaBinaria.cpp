@@ -26,14 +26,14 @@ int main(){
 
 int bBin(int x, int v[], int esq, int dir){
 	
-int pivo = (esq - dir) / 2;
+	int pivo = (esq + dir) / 2;
 
 	if (esq > dir) return 0;
 
 	if(x == v[pivo]) return 1;
 	
-	if(x < v[pivo]) return bBin(x, v, esq, pivo-1);		
+	if(x < v[pivo]) return (bBin(x, v, esq, pivo-1));		
 
-	return bBin(x, v, pivo - 1, dir);
+	return (bBin(x, v, pivo + 1, dir));
 
 }
