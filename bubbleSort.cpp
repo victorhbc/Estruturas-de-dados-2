@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int bubble(int n, int v[]);
+void bubble(int n, int v[]);
 
 
 int main(){
@@ -21,7 +21,7 @@ int main(){
 
 }
 
-int bubble(int n, int v[]){
+void bubble(int n, int v[]){
 	
 	int aux;
 	
@@ -40,3 +40,4 @@ int bubble(int n, int v[]){
 	}	
 
 }
+
